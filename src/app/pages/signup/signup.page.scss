@@ -1,0 +1,84 @@
+/* signup.page.scss */
+
+/* Arrière-plan de la page */
+ion-content {
+  --background: green;
+  padding: 10px;
+}
+
+/* Style des cartes */
+ion-card {
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+/* Style des titres de carte */
+ion-card-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Style des éléments (inputs, labels) */
+ion-item {
+  --background: #ffffff;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Style des labels */
+ion-label {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Style spécifique pour les labels noirs */
+ion-label.black-label {
+  color: #000;
+}
+
+/* Style des inputs */
+ion-input {
+  --placeholder-color: #999;
+  padding-right: 2rem; /* Spacement pour l'icône de basculement */
+}
+
+/* Style spécifique pour les inputs noirs */
+ion-input.black-input {
+  color: #000; /* Texte saisi en noir */
+}
+
+/* Style des boutons */
+ion-button {
+  margin: 10px;
+  --color: #ffffff;
+  border-radius: 8px;
+}
+
+/* Style spécifique pour le bouton Annuler */
+ion-button[color="danger"] {
+  --background: #ff3b30;
+  --background-activated: #d32f2f;
+  --background-focused: #d32f2f;
+  --background-hover: #d32f2f;
+}
+
+/* Style spécifique pour le bouton Valider */
+ion-button.validate-button {
+  --background: #28a745;
+  --background-activated: #218838;
+  --background-focused: #218838;
+  --background-hover: #218838;
+}
+
+/* Groupe de boutons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}

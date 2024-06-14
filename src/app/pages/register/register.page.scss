@@ -1,0 +1,66 @@
+/* register.page.scss */
+
+/* Arrière-plan de la page */
+ion-content {
+    --background: green;
+    padding: 10px;
+  }
+  
+  /* Style des cartes */
+  ion-card {
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+  }
+  
+  /* Style des titres de carte */
+  ion-card-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Style des éléments (inputs, labels) */
+  ion-item {
+    --background: red;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Style des labels */
+  ion-label {
+    font-size: 1em;
+    color: #000; /* Texte en noir */
+  }
+  
+  /* Style des inputs */
+  ion-input {
+    --placeholder-color: #999;
+  }
+  
+  /* Style des boutons */
+  ion-button {
+    margin: 20px;
+    --background: #007bff;
+    --background-activated: #0056b3;
+    --background-focused: #0056b3;
+    --background-hover: #0056b3;
+    --color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  /* Style des radios */
+  ion-radio {
+    --color-checked: #007bff;
+    --color: #666;
+  }
+  
+  /* Ajustements pour les différents éléments */
+  ion-card-content {
+    padding: 10px 20px;
+  }
+  
