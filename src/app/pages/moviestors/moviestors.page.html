@@ -1,26 +1,29 @@
 <ion-header>
-  <ion-toolbar color="dark">
-    <ion-searchbar [(ngModel)]="searchTitle"></ion-searchbar>
-    <ion-buttons slot="end">
-      <ion-button color="light" (click)="searchMovie()">
-        <ion-icon name="search-sharp"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+  <ion-toolbar>
+    <ion-title>Moviestors</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Moviestors</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-searchbar [(ngModel)]="searchTitle" (ionInput)="searchMovie()"></ion-searchbar>
 
-  <div class="img_box">
-    <img [src]="movieData.imageUrl">
+  <div *ngIf="movieData.title">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ movieData.title }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-img [src]="movieData.imageUrl"></ion-img>
+        <p><strong>Date de sortie:</strong> {{ movieData.annee }}</p>
+        <p><strong>Langue:</strong> {{ movieData.langue }}</p>
+        <p><strong>Genre:</strong> {{ movieData.genre }}</p>
+        <p><strong>Pays:</strong> {{ movieData.pays }}</p>
+        <p><strong>Acteurs principaux:</strong> {{ movieData.acteurs }}</p>
+        <p><strong>Durée:</strong> {{ movieData.duree }}</p>
+        <p><strong>Description:</strong> {{ movieData.description }}</p>
+      </ion-card-content>
+    </ion-card>
   </div>
 
-  <h1>{{ movieData.title }}</h1>
-  <p>{{ movieData.description }}</p>
-  <p>{{ movieData.annee }}</p>
+  <ion-button (click)="goHome()">Revenir à l'accueil</ion-button>
 </ion-content>

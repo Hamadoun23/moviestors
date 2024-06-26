@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'moviestors',
     loadChildren: () => import('./pages/moviestors/moviestors.module').then( m => m.MoviestorsPageModule)
-  }
+  },
+  {
+    path: 'movieland-iam',
+    loadChildren: () => import('./pages/movieland-iam/movieland-iam.module').then( m => m.MovielandIamPageModule)
+  },
 ];
 
 @NgModule({
